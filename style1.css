@@ -1,0 +1,84 @@
+@import url('https ://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+/* Universal styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Flexbox layout for the body to push footer down */
+body {
+    display: flex;                   /* Use Flexbox for the entire body */
+    flex-direction: column;         /* Arrange children in a column */
+    margin: auto;
+    min-height: 100vh; 
+    max-width: 75%;
+    background-color: #EAC599;            /* Full height of the viewport */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Header styles */
+header {
+    background-color:  #734c47; ;     /* Dark background for the header */
+    color: #0000;                  /* White text color */
+    padding: 20px;                 /* Padding around the header*/ 
+    text-align: center;            /* Center text */
+}
+
+/* Header title styles */
+header h1 {
+    font-size: 24px;               /* Font size for the heading */
+    margin: 0;                  /* Remove default margin */
+    color: black;
+}
+
+/* Main content styles */
+main {
+    flex: 1;                       /* Allow main to grow and take up available space */
+    display: flex;                 /* Use Flexbox for content alignment */
+    align-items: center;           /* Center items vertically */
+    justify-content: center;       /* Center items horizontally*/
+    text-align: center;            /* Center text */
+}
+
+/* Paragraph container styles */
+.paragraph-container {
+    display: flex;                  /* Flex container for paragraphs */
+    flex-direction: row;        /* Arrange paragraphs in a column */
+    gap: 15px;                     /* Space between paragraphs */
+    max-width: 900px;            /* Maximum width for better readability */
+    margin: 20px auto;             /* Center the container with margin */ 
+    background-color:  #f2dab6;      /* wheat background for paragraphs */
+    border-radius: 8px;            /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 20px;                 /* Padding inside the container */
+}
+
+/* Paragraph styles */
+.paragraph-container p {
+    font-size: 16px;               /* Font size for paragraph */
+    margin: 0;
+    flex: 1;                     /* Remove default margin */
+    color: black;  
+    border: radius 8px; ;                 /* Dark text color */
+    padding: 0 20px;
+
+}
+/* Adding vertical lines between paragraphs */
+.paragraph-container p:not(:first-child) {
+    border-left: 1px solid black; /* Adjust color to match your theme */
+
+}
+
+/* Footer styles */
+.footer {
+    
+    margin-top: auto;
+    text-align: center;            /* Center text */
+    padding: 10px 0;              /* Padding around footer */
+}
